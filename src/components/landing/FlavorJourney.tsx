@@ -9,20 +9,20 @@ const flavors = [
   {
     name: 'Creamy & Comforting',
     description: 'Wrap yourself in a warm hug with our classic, rich milk teas.',
-    image: 'https://picsum.photos/400/400?random=15',
-    hint: 'creamy milk-tea',
+    image: 'https://images.unsplash.com/photo-1623123093799-70a72826e167?w=500&auto=format&fit=crop&q=60',
+    hint: 'milk tea',
   },
   {
     name: 'Fruity & Vibrant',
     description: 'Awaken your senses with a burst of fresh, zesty fruit teas.',
-    image: 'https://picsum.photos/400/400?random=16',
-    hint: 'fruit tea',
+    image: 'https://images.unsplash.com/photo-1623123093799-70a72826e167?w=500&auto=format&fit=crop&q=60',
+    hint: 'milk tea',
   },
   {
     name: 'Bold & Indulgent',
     description: 'Treat yourself to decadent flavors like brown sugar and cheese foam.',
-    image: 'https://picsum.photos/400/400?random=17',
-    hint: 'brown-sugar milk-tea',
+    image: 'https://images.unsplash.com/photo-1623123093799-70a72826e167?w=500&auto=format&fit=crop&q=60',
+    hint: 'milk tea',
   },
 ];
 
