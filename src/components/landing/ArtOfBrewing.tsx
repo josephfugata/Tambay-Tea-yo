@@ -13,7 +13,7 @@ const steps = [
   {
     title: 'Brewed to Perfection',
     description: 'Our teas are brewed in small batches, timed precisely to extract the richest flavors.',
-    image: 'https://picsum.photos/400/500?random=13',
+    image: 'https://plus.unsplash.com/premium_photo-1661335265371-155707f2a739?w=400&h=500&auto=format&fit=crop&q=60',
     hint: 'tea brewing',
   },
   {
