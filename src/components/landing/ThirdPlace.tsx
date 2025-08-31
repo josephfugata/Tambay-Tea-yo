@@ -7,31 +7,31 @@ const ThirdPlace = () => {
     <section id="third-place" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full aspect-w-1 aspect-h-1">
+          <div className="relative w-full">
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&auto=format&fit=crop&q=60"
+                src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&h=400&auto=format&fit=crop&q=60"
                 alt="Cozy cafe corner"
                 width={400}
-                height={600}
-                className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                height={400}
+                className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full col-span-2"
                 data-ai-hint="cafe interior"
               />
-              <div className="grid gap-4">
+              <div className="grid grid-cols-2 col-span-2 gap-4">
                 <Image
                   src="https://images.unsplash.com/photo-1583124252668-93a11eb64a5f?w=400&auto=format&fit=crop&q=60"
                   alt="Friends chatting"
                   width={400}
-                  height={300}
-                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  height={400}
+                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full aspect-square"
                    data-ai-hint="people talking"
                 />
                 <Image
                   src="https://images.unsplash.com/photo-1575737111036-fabeda85c6a4?w=400&auto=format&fit=crop&q=60"
                   alt="Person studying"
                   width={400}
-                  height={300}
-                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  height={400}
+                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full aspect-square"
                    data-ai-hint="person studying"
                 />
               </div>
