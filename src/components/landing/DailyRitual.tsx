@@ -34,7 +34,7 @@ const DailyRitual = () => {
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {rituals.map((ritual, index) => (
-            <Card key={index} className="text-center p-8 border-2 border-transparent hover:border-primary hover:shadow-2xl transition-all duration-300">
+            <Card key={index} className="text-center p-8 border-2 border-transparent hover:border-primary hover:shadow-2xl transition-all duration-300 shadow-lg">
               <CardContent className="flex flex-col items-center gap-4">
                 <div className="p-4 bg-primary/10 rounded-full">
                   {ritual.icon}
