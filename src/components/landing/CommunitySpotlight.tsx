@@ -12,13 +12,13 @@ import Image from 'next/image';
 
 const stories = [
   {
-    image: 'https://picsum.photos/400/300?random=22',
+    image: 'https://images.unsplash.com/photo-1542338332-76971ae8c292?w=500&auto=format&fit=crop&q=60',
     hint: 'students studying',
     quote: "Our weekly study group wouldn't be the same without our Tambay Tea sessions. It's our brain fuel!",
     author: '— The Engineering Barkada',
   },
   {
-    image: 'https://picsum.photos/400/300?random=23',
+    image: 'https://plus.unsplash.com/premium_photo-1679090867828-e34703088027?w=500&auto=format&fit=crop&q=60',
     hint: 'couple on a date',
     quote: "We had our first date here! Now it's our go-to spot for anniversaries. So many happy memories.",
     author: '— Mark & Jess',
