@@ -11,7 +11,7 @@ const MadeForYou = () => {
     >
       <div
         className="absolute inset-0 bg-cover bg-center brightness-50"
-        style={{ backgroundImage: "url('https://picsum.photos/1920/1080?random=21')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529474944862-bf4949bd2f1a?h=480&w=1080&auto=format&fit=crop&q=60')" }}
         data-ai-hint="milk tea variety"
       ></div>
       <div className="relative z-10 container px-4 md:px-6">
