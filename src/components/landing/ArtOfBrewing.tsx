@@ -19,7 +19,7 @@ const steps = [
   {
     title: 'Crafted by Hand',
     description: 'Each drink is a masterpiece, handcrafted with passion by our talented baristas.',
-    image: 'https://picsum.photos/400/500?random=14',
+    image: 'https://images.unsplash.com/photo-1611928237590-087afc90c6fd?w=400&h=500&auto=format&fit=crop&q=60',
     hint: 'barista pouring',
   },
 ];
