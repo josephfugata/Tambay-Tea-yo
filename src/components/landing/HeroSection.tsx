@@ -16,9 +16,7 @@ const HeroSection = () => {
       <div className="relative z-10 container px-4 md:px-6 text-white">
         <div className="max-w-3xl mx-auto flex flex-col items-center space-y-6">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl font-headline leading-tight">
-            Tambay Tayo!
-            <br />
-            <span className="text-background/90">Your Daily Dose of Happiness.</span>
+            Tambay Tea-yo!
           </h1>
           <p className="max-w-xl text-lg md:text-xl text-background/80">
             Freshly brewed, perfectly blended. Discover your new favorite milk tea
