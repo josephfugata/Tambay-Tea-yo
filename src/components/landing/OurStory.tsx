@@ -37,7 +37,7 @@ const OurStory = () => {
             className="w-full aspect-square relative"
           >
             <Image
-              src="https://picsum.photos/600/600?random=11"
+              src="https://images.unsplash.com/photo-1697206663454-6537a6bebd48?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0"
               alt="Founders laughing"
               fill
               className="object-cover rounded-xl shadow-lg"
