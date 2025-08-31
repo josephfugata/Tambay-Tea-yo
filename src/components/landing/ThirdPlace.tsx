@@ -10,7 +10,7 @@ const ThirdPlace = () => {
           <div className="relative w-full aspect-w-1 aspect-h-1">
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="https://picsum.photos/400/600?random=18"
+                src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&auto=format&fit=crop&q=60"
                 alt="Cozy cafe corner"
                 width={400}
                 height={600}
@@ -19,7 +19,7 @@ const ThirdPlace = () => {
               />
               <div className="grid gap-4">
                 <Image
-                  src="https://picsum.photos/400/300?random=19"
+                  src="https://images.unsplash.com/photo-1583124252668-93a11eb64a5f?w=400&auto=format&fit=crop&q=60"
                   alt="Friends chatting"
                   width={400}
                   height={300}
@@ -27,7 +27,7 @@ const ThirdPlace = () => {
                    data-ai-hint="people talking"
                 />
                 <Image
-                  src="https://picsum.photos/400/300?random=20"
+                  src="https://images.unsplash.com/photo-1575737111036-fabeda85c6a4?w=400&auto=format&fit=crop&q=60"
                   alt="Person studying"
                   width={400}
                   height={300}
