@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://picsum.photos/1920/1080"
+        src="https://images.unsplash.com/photo-1572932759882-bb34c848d1b3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
         alt="A delicious cup of milk tea"
         fill
         className="object-cover object-center brightness-50"
