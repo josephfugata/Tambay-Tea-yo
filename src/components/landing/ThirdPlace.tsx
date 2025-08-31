@@ -8,30 +8,31 @@ const ThirdPlace = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full">
-            <div className="grid grid-cols-2 gap-4">
-              <Image
-                src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&h=400&auto=format&fit=crop&q=60"
-                alt="Cozy cafe corner"
-                width={400}
-                height={400}
-                className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full col-span-2"
-                data-ai-hint="cafe interior"
-              />
-              <div className="grid grid-cols-2 col-span-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="md:col-span-2 relative aspect-[16/9] md:aspect-auto md:h-80 w-full">
+                <Image
+                  src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&h=400&auto=format&fit=crop&q=60"
+                  alt="Cozy cafe corner"
+                  fill
+                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  data-ai-hint="cafe interior"
+                />
+              </div>
+              <div className="relative aspect-square w-full">
                 <Image
                   src="https://images.unsplash.com/photo-1583124252668-93a11eb64a5f?w=400&auto=format&fit=crop&q=60"
                   alt="Friends chatting"
-                  width={400}
-                  height={400}
-                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full aspect-square"
+                  fill
+                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                    data-ai-hint="people talking"
                 />
+              </div>
+               <div className="relative aspect-square w-full">
                 <Image
                   src="https://images.unsplash.com/photo-1575737111036-fabeda85c6a4?w=400&auto=format&fit=crop&q=60"
                   alt="Person studying"
-                  width={400}
-                  height={400}
-                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300 w-full aspect-square"
+                  fill
+                  className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                    data-ai-hint="person studying"
                 />
               </div>
