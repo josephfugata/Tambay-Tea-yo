@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Tambay Tea',
-  description: 'Your Daily Dose of Happiness!',
+  description: 'Ang daily dose of good vibes mo!',
 };
 
 export default function RootLayout({

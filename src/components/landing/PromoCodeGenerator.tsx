@@ -21,21 +21,21 @@ const PromoCodeGenerator = () => {
       const promoDetails = {
         discountPercentage: Math.floor(Math.random() * 11) + 10, // 10% to 20%
         expirationDays: 7,
-        promoCodeDescription: 'A special treat for our awesome online visitors!',
+        promoCodeDescription: 'Isang espesyal na regalo para sa aming mga bisita online!',
       };
 
       const generatedResult = await generatePromoCode(promoDetails);
       setResult(generatedResult);
       toast({
-        title: 'Your code is ready!',
-        description: 'Use it on your next in-store purchase.',
+        title: 'Ready na ang code mo!',
+        description: 'Gamitin ito sa iyong susunod na pagbili sa tindahan.',
       });
     } catch (error) {
       console.error('Error generating promo code:', error);
       toast({
         variant: 'destructive',
-        title: 'Oh no! Something went wrong.',
-        description: 'Could not generate a code. Please try again.',
+        title: 'Ay, nako! May problema.',
+        description: 'Hindi makabuo ng code. Pakisubukang muli.',
       });
     } finally {
       setIsLoading(false);
@@ -51,22 +51,22 @@ const PromoCodeGenerator = () => {
             AI-Powered Deals
           </Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-            Want a Special Discount?
+            Gusto mo ng Espesyal na Diskwento?
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            Click the button to let our AI create a unique promo code just for you! 
-            Show it at the counter for a sweet deal on your next visit.
+            I-click ang button para gumawa ang aming AI ng unique promo code para lang sa\'yo!
+            Ipakita ito sa counter para sa isang magandang deal sa iyong susunod na pagbisita.
           </p>
           <Button onClick={handleGenerate} disabled={isLoading} size="lg" className="mt-4">
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                Generating...
+                Gumagawa...
               </>
             ) : (
               <>
                 <Gift className="mr-2 h-5 w-5" />
-                Get My Surprise Code!
+                Kunin ang Aking Sorpresang Code!
               </>
             )}
           </Button>
@@ -77,9 +77,9 @@ const PromoCodeGenerator = () => {
             <Card className="w-full max-w-md animate-in fade-in-50 zoom-in-95 shadow-lg">
               <CardHeader className="items-center text-center">
                 <Ticket className="w-12 h-12 text-primary" />
-                <CardTitle className="text-2xl font-bold">Your Code is Here!</CardTitle>
+                <CardTitle className="text-2xl font-bold">Narito na ang Iyong Code!</CardTitle>
                 <CardDescription>
-                  Screenshot this or show it at the counter.
+                  I-screenshot ito o ipakita sa counter.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">

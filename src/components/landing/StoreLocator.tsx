@@ -8,17 +8,17 @@ const StoreLocator = () => {
       <div className="container px-4 md:px-6 grid gap-10 lg:grid-cols-2 items-center">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-            Come Say Hi!
+            Tambay Tayo!
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed">
-            We&apos;re waiting for you! Find our cozy corner in the city, the perfect
-            place to unwind, catch up with friends, or get some work done.
+            Hinihintay ka namin! Hanapin ang aming cozy corner sa siyudad, ang perfect
+            place para mag-relax, makipagkwentuhan, o magtrabaho.
           </p>
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="text-primary" />
-                Our Flagship Store
+                Ang Aming Flagship Store
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -32,7 +32,7 @@ const StoreLocator = () => {
               <div className="flex items-start gap-4">
                 <Clock className="w-5 h-5 mt-1 text-muted-foreground" />
                 <div>
-                  <p className="font-medium">Open Daily</p>
+                  <p className="font-medium">Bukas Araw-Araw</p>
                   <p className="text-sm text-muted-foreground">10:00 AM - 10:00 PM</p>
                 </div>
               </div>
@@ -42,7 +42,7 @@ const StoreLocator = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Navigation className="mr-2 h-4 w-4" /> Get Directions
+                  <Navigation className="mr-2 h-4 w-4" /> Kumuha ng Direksyon
                 </a>
               </Button>
             </CardContent>
@@ -58,7 +58,7 @@ const StoreLocator = () => {
               </div>
               <div className="absolute top-0 left-0 w-16 h-16 border-2 border-primary/50 rounded-full animate-ping"></div>
             </div>
-             <p className="absolute bottom-4 text-xs text-muted-foreground">Map is for illustration purposes only.</p>
+             <p className="absolute bottom-4 text-xs text-muted-foreground">Ang mapa ay para sa ilustrasyon lamang.</p>
           </div>
         </div>
       </div>

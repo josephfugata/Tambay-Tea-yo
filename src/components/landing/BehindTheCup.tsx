@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 const behindTheCupItems = [
   {
-    title: 'Meet Our Farmers',
-    description: 'We partner with local farms that share our passion for quality and sustainability. Get to know the hands that grow our amazing ingredients.',
+    title: 'Kilalanin ang Aming Farmers',
+    description: 'Partner namin ang mga local farms na kapareho namin ng passion para sa kalidad at sustainability. Kilalanin ang mga kamay sa likod ng aming ingredients.',
     image: 'https://images.unsplash.com/photo-1433704334812-6c45b0b8784d?w=500&auto=format&fit=crop&q=60',
     hint: 'farmer portrait',
   },
   {
-    title: 'Our Passionate Baristas',
-    description: "They're more than just staff; they're artists, creators, and the smiling faces that make your day better. They're the heart of Tambay Tea.",
+    title: 'Ang aming Passionate Baristas',
+    description: "Higit pa sa staff, sila\'y mga artists, creators, at ang mga ngiting bubuo sa araw mo. Sila ang puso ng Tambay Tea.",
     image: 'https://plus.unsplash.com/premium_photo-1661758946219-dcf3e31e557d?w=500&auto=format&fit=crop&q=60',
     hint: 'barista portrait',
   },
@@ -23,12 +23,12 @@ const BehindTheCup = () => {
     <section id="behind-the-cup" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <Badge variant="secondary">People & Passion</Badge>
+          <Badge variant="secondary">Tao at Puso</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline mt-2">
-            Behind Every Cup
+            Ang Kwento sa Bawat Inumin
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
-            It takes a village to create your perfect moment.
+            Kailangan ng buong team para mabuo ang perfect moment mo.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-center">

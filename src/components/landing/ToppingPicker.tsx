@@ -42,10 +42,10 @@ const ToppingPicker = () => {
           <div className="space-y-2">
             <Badge variant="outline"><Sparkles className="mr-2 h-4 w-4 text-primary" />Interactive</Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Create Your Perfect Drink
+              Buuin ang Iyong Pangarap na Inumin
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Unleash your creativity! Mix and match our delicious toppings to build your dream boba concoction.
+              Ilabas ang iyong pagiging malikhain! Paghaluin ang aming masasarap na toppings para mabuo ang iyong pangarap na boba.
             </p>
           </div>
         </div>
@@ -67,8 +67,8 @@ const ToppingPicker = () => {
             </div>
             <div className="p-8 flex flex-col justify-center">
               <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-2xl font-headline">Your Custom Creation</CardTitle>
-                <CardDescription>Select your favorite toppings.</CardDescription>
+                <CardTitle className="text-2xl font-headline">Ang Iyong Obra Maestra</CardTitle>
+                <CardDescription>Piliin ang iyong mga paboritong toppings.</CardDescription>
               </CardHeader>
               <CardContent className="p-0 space-y-4">
                 <div className="space-y-2">
@@ -91,9 +91,9 @@ const ToppingPicker = () => {
               </CardContent>
               <CardFooter className="p-0 mt-8 flex-col items-start gap-4">
                 <div className="text-2xl font-bold">
-                  Total Price: <span className="text-primary">₱{totalPrice.toFixed(2)}</span>
+                  Kabuuang Presyo: <span className="text-primary">₱{totalPrice.toFixed(2)}</span>
                 </div>
-                <Button size="lg" className="w-full">Add to My Order</Button>
+                <Button size="lg" className="w-full">Idagdag sa Aking Order</Button>
               </CardFooter>
             </div>
           </div>

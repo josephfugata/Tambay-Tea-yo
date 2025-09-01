@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="text-xl font-bold font-headline">Tambay Tea</span>
         </div>
         <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-          © {new Date().getFullYear()} Tambay Tea. All Rights Reserved.
+          © {new Date().getFullYear()} Tambay Tea. Tara, tambay tayo!
         </p>
         <div className="flex items-center gap-4">
           <Link href="#" aria-label="Instagram">

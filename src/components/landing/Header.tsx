@@ -21,7 +21,7 @@ const Header = () => {
   const navLinks = [
     { href: '#menu', label: 'Menu' },
     { href: '#deals', label: 'Deals' },
-    { href: '#locations', label: 'Locations' },
+    { href: '#locations', label: 'Lokasyon' },
     { href: '#reviews', label: 'Reviews' },
   ];
 
@@ -51,7 +51,7 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="hidden md:flex">Order Now</Button>
+            <Button className="hidden md:flex">Order na!</Button>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -77,7 +77,7 @@ const Header = () => {
                     ))}
                   </nav>
                   <Button size="lg" className="w-full">
-                    Order Now
+                    Order na!
                   </Button>
                 </div>
               </SheetContent>

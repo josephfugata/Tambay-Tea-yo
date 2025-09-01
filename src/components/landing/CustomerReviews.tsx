@@ -18,7 +18,7 @@ const reviews = [
     avatarImage: 'https://picsum.photos/100/100?random=1',
     rating: 5,
     review:
-      'The best classic milk tea in town! The pearls are always perfectly chewy. Perfect for a quick tambay with friends.',
+      'Pinakamasarap na classic milk tea sa bayan! Laging perfect ang pagkaluto ng pearls. Perfect for a quick tambay with friends.',
   },
   {
     name: 'John D.',
@@ -26,7 +26,7 @@ const reviews = [
     avatarImage: 'https://picsum.photos/100/100?random=2',
     rating: 5,
     review:
-      'I love their fruit teas! Super refreshing, especially on a hot day. The "Create Your Own" feature online is so fun!',
+      'Love ko ang fruit teas nila! Super refreshing, lalo na sa mainit na araw. Ang saya gamitin nung "Create Your Own" feature online!',
   },
   {
     name: 'Maria C.',
@@ -34,7 +34,7 @@ const reviews = [
     avatarImage: 'https://picsum.photos/100/100?random=3',
     rating: 4,
     review:
-      'Cozy place and great drinks. The staff are super friendly. My go-to study spot. The Wi-Fi is reliable too!',
+      'Cozy place and great drinks. Sobrang friendly ng staff. Dito ako laging nag-aaral. Maaasahan din ang Wi-Fi!',
   },
   {
     name: 'Kevin S.',
@@ -42,7 +42,7 @@ const reviews = [
     avatarImage: 'https://picsum.photos/100/100?random=4',
     rating: 5,
     review:
-      'That cheese foam is to die for! I get it on every drink. The online ordering is seamless and my order is always ready on time.',
+      'Patay ako diyan sa cheese foam! Laging kong ino-order. Ang galing ng online ordering system, laging ready on time ang order ko.',
   },
 ];
 
@@ -53,11 +53,10 @@ const CustomerReviews = () => {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Loved by Foodies
+              Bet na Bet ng mga Foodies!
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Don&apos;t just take our word for it. Here&apos;s what our amazing
-              customers have to say about their Tambay Tea experience.
+              Huwag maniwala sa sabi-sabi, pakinggan ang sinasabi ng aming mga customers tungkol sa kanilang Tambay Tea experience.
             </p>
           </div>
         </div>

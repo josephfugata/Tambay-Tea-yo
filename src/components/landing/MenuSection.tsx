@@ -13,7 +13,7 @@ import { Badge } from '@/components/ui/badge';
 const menuItems = [
   {
     name: 'Classic Pearl Milk Tea',
-    description: 'The timeless original. Creamy, rich black tea with perfectly chewy tapioca pearls.',
+    description: 'Ang original na paborito. Creamy, rich black tea na may perpektong chewy tapioca pearls.',
     price: '₱100',
     image: 'https://images.unsplash.com/photo-1575417634984-8e608b88a04b?w=500&auto=format&fit=crop&q=60',
     hint: 'classic milk-tea',
@@ -21,7 +21,7 @@ const menuItems = [
   },
   {
     name: 'Taro Dream',
-    description: 'A vibrant and earthy delight. Real taro paste blended for a smooth, satisfying experience.',
+    description: 'Isang masarap at kakaibang karanasan. Tunay na taro na hinalo para sa smooth na sarap.',
     price: '₱120',
     image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=60',
     hint: 'taro milk-tea',
@@ -29,7 +29,7 @@ const menuItems = [
   },
   {
     name: 'Okinawa Brown Sugar',
-    description: 'A decadent treat with roasted brown sugar syrup, fresh milk, and signature pearls.',
+    description: 'Isang treat na may roasted brown sugar syrup, sariwang gatas, at aming signature pearls.',
     price: '₱125',
     image: 'https://images.unsplash.com/photo-1611928237590-087afc90c6fd?w=500&auto=format&fit=crop&q=60',
     hint: 'brown-sugar milk-tea',
@@ -37,7 +37,7 @@ const menuItems = [
   },
   {
     name: 'Matcha Cheesecake',
-    description: 'Earthy premium matcha topped with a layer of rich, salty-sweet cream cheese foam.',
+    description: 'Premium matcha na mayaman sa lasa, na may patong ng masarap at maalat-alat na cream cheese foam.',
     price: '₱135',
     image: 'https://images.unsplash.com/photo-1601924287811-e34de5d17476?w=500&auto=format&fit=crop&q=60',
     hint: 'matcha milk-tea',
@@ -51,12 +51,12 @@ const MenuSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-             <Badge variant="secondary" className="text-sm">Our Menu</Badge>
+             <Badge variant="secondary" className="text-sm">Aming Menu</Badge>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Taste the Happiness
+              Tikman ang Saya
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Crafted with premium ingredients and a whole lot of love. Here are some of our fan favorites!
+              Gawa sa mga premium na sangkap at puno ng pagmamahal. Ito ang ilan sa mga paborito ng aming mga suki!
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const MenuSection = () => {
                   />
                 </div>
                 {item.isBestseller && (
-                  <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground">Best Seller</Badge>
+                  <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground">Bestseller</Badge>
                 )}
               </CardHeader>
               <CardContent className="pt-6 flex-1">

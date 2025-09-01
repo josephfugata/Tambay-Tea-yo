@@ -5,18 +5,18 @@ import { Zap, Sun, Moon } from 'lucide-react';
 const rituals = [
   {
     icon: <Sun className="w-8 h-8 text-primary" />,
-    title: 'The Morning Boost',
-    text: "Start your day with a burst of energy. A refreshing fruit tea to awaken your senses and set a positive tone.",
+    title: 'Pampasigla sa Umaga',
+    text: "Simulan ang araw with a burst of energy. Isang refreshing fruit tea para magising ang iyong diwa at mag-set ng positive vibes.",
   },
   {
     icon: <Zap className="w-8 h-8 text-primary" />,
-    title: 'The Afternoon Pick-Me-Up',
-    text: "Beat the midday slump. A classic milk tea with chewy pearls is the perfect treat to re-energize your focus.",
+    title: 'Power-Up sa Hapon',
+    text: "Labanan ang antok! Isang classic milk tea na may chewy pearls, ang perfect treat para bumalik ang focus mo.",
   },
   {
     icon: <Moon className="w-8 h-8 text-primary" />,
-    title: 'The Evening Wind-Down',
-    text: "Settle in for a cozy evening. A warm, creamy taro drink to help you relax and unwind after a long day.",
+    title: 'Pampakalma sa Gabi',
+    text: "Mag-relax para sa isang cozy na gabi. Isang mainit at creamy na taro drink para matulungan kang mag-unwind after a long day.",
   },
 ];
 
@@ -26,10 +26,10 @@ const DailyRitual = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-            Your Daily Dose of Happiness
+            Ang Daily Dose of Happiness Mo
           </h2>
           <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed">
-            Whatever the moment, we have a drink to match. Make Tambay Tea your daily ritual.
+            Anuman ang moment, may inumin kami para sa'yo. Gawing daily ritual ang Tambay Tea.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">

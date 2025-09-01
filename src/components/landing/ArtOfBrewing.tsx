@@ -5,20 +5,20 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const steps = [
   {
-    title: 'Sourced with Care',
-    description: 'We travel the world to find the finest tea leaves, ensuring every sip starts with quality.',
+    title: 'Pinipili nang may Puso',
+    description: 'Nilalakbay namin ang mundo para hanapin ang pinaka-the best na tea leaves, para bawat higop, kalidad ang simula.',
     image: 'https://images.unsplash.com/photo-1589618630299-c9b59a0075ee?w=500&auto=format&fit=crop&q=60',
     hint: 'tea leaves',
   },
   {
-    title: 'Brewed to Perfection',
-    description: 'Our teas are brewed in small batches, timed precisely to extract the richest flavors.',
+    title: 'Timplang Sakto',
+    description: 'Ang aming mga tsaa ay niluluto sa small batches, tamang-tama ang oras para lumabas ang pinakamasarap na lasa.',
     image: 'https://plus.unsplash.com/premium_photo-1661335265371-155707f2a739?w=400&h=500&auto=format&fit=crop&q=60',
     hint: 'tea brewing',
   },
   {
-    title: 'Crafted by Hand',
-    description: 'Each drink is a masterpiece, handcrafted with passion by our talented baristas.',
+    title: 'Gawang-kamay, Alay sa\'yo',
+    description: 'Bawat inumin ay obra maestra, gawang-kamay at may kasamang passion mula sa aming magagaling na barista.',
     image: 'https://images.unsplash.com/photo-1611928237590-087afc90c6fd?w=400&h=500&auto=format&fit=crop&q=60',
     hint: 'barista pouring',
   },
@@ -29,10 +29,10 @@ const ArtOfBrewing = () => {
     <section id="art-of-brewing" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline mb-4">
-          The Art of the Brew
+          Ang Sining sa Bawat Timpla
         </h2>
         <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl/relaxed mb-12">
-          It’s more than a process; it’s our passion. Discover the journey from leaf to cup.
+          Hindi lang ito proseso, ito ang aming passion. Silipin ang paglalakbay ng tsaa, from leaf to cup.
         </p>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, index) => (

@@ -18,11 +18,11 @@ const SocialFeed = () => {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Join the #TambayTea Fam
+              Sali na sa #TambayTeaFam!
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Follow our adventures on Instagram and share your own moments with us.
-              We love seeing your smiling faces!
+              I-follow ang aming adventures sa Instagram at i-share ang iyong moments.
+              Gusto naming makita ang inyong mga ngiti!
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ const SocialFeed = () => {
         </div>
         <div className="text-center mt-12">
             <Button asChild size="lg">
-                <Link href="#">Follow @TambayTea on Instagram</Link>
+                <Link href="#">I-follow ang @TambayTea sa Instagram</Link>
             </Button>
         </div>
       </div>

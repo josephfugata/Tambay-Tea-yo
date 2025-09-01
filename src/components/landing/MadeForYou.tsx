@@ -27,13 +27,13 @@ const MadeForYou = () => {
           className="max-w-3xl mx-auto flex flex-col items-center space-y-6"
         >
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl font-headline leading-tight text-white">
-            An Expression of You
+            Ikaw ang Bida
           </h2>
           <p className="max-w-xl text-lg md:text-xl text-background/90">
-            Your drink is your statement. Sweet, bold, subtle, or surprising—what will you create today? Our menu is your canvas.
+            Ang inumin mo, statement mo. Matamis, matapang, o kakaiba—ano ang trip mong timpla ngayon? Ang menu namin ang iyong canvas.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold animate-pulse">
-            <Link href="#customizer">Make It Yours</Link>
+            <Link href="#customizer">Gawin Mong Unique</Link>
           </Button>
         </motion.div>
       </div>

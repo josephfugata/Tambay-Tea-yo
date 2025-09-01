@@ -40,10 +40,10 @@ const ThirdPlace = () => {
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Your Third Place
+              Ang Iyong Third Place
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed">
-              There’s home, there’s work, and then there’s your special place. Your haven. We’ve built Tambay Tea to be that for you.
+              May bahay, may trabaho, at mayroon kang espesyal na lugar. Ang iyong kanlungan. Binuo namin ang Tambay Tea para maging ganoon para sa iyo.
             </p>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
@@ -51,8 +51,8 @@ const ThirdPlace = () => {
                   <Home className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">A Break from Home</h3>
-                  <p className="text-sm text-muted-foreground">Escape the routine and find a new perspective.</p>
+                  <h3 className="font-semibold">Pahinga Mula sa Bahay</h3>
+                  <p className="text-sm text-muted-foreground">Takasan ang paulit-ulit na gawain at humanap ng bagong pananaw.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -60,8 +60,8 @@ const ThirdPlace = () => {
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">An Office Away From The Office</h3>
-                  <p className="text-sm text-muted-foreground">Spark creativity with free Wi-Fi and the perfect ambiance.</p>
+                  <h3 className="font-semibold">Opisina sa Labas ng Opisina</h3>
+                  <p className="text-sm text-muted-foreground">Hanapin ang inspirasyon gamit ang libreng Wi-Fi at tamang ambiance.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -69,8 +69,8 @@ const ThirdPlace = () => {
                   <Coffee className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Your Community Hub</h3>
-                  <p className="text-sm text-muted-foreground">Meet, greet, and connect with fellow tea lovers.</p>
+                  <h3 className="font-semibold">Sentro ng Iyong Komunidad</h3>
+                  <p className="text-sm text-muted-foreground">Makipagkilala, bumati, at kumonekta sa mga kapwa mahilig sa tsaa.</p>
                 </div>
               </div>
             </div>

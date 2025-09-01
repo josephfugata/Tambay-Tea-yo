@@ -8,17 +8,17 @@ const NightCap = () => {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline mb-4">
-            Ready for Your Happy Moment?
+            Handa na para sa Happy Moment Mo?
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed mb-8">
-            Your cup of happiness is waiting. Whether you want to grab and go or stay and chill, we're ready for you.
+            Naghihintay na ang iyong tasa ng kaligayahan. Grab-and-go man o stay-and-chill, G kami para sa'yo!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="#menu">Explore the Menu</Link>
+              <Link href="#menu">Silipin ang Menu</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#locations">Find Your Tambayan</Link>
+              <Link href="#locations">Hanapin ang Tambayan Mo</Link>
             </Button>
           </div>
         </div>

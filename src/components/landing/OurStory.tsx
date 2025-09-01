@@ -17,16 +17,16 @@ const OurStory = () => {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-primary">
-              From a Simple Dream
+              Mula sa Isang Pangarap
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed">
-              Tambay Tea started not in a boardroom, but on a porch with friends. It was born from a shared love for laughter, stories, and the simple joy of a perfect cup of milk tea. We wanted to create a space that felt like home—a place to pause, connect, and just be.
+              Ang Tambay Tea ay nagsimula hindi sa isang boardroom, kundi sa isang beranda kasama ang mga kaibigan. Ito ay isinilang mula sa pagmamahal sa tawanan, kwentuhan, at simpleng kaligayahan ng isang perpektong tasa ng milk tea. Nais naming lumikha ng isang lugar na parang tahanan—isang lugar para magpahinga, kumonekta, at maging totoo sa sarili.
             </p>
             <p className="text-muted-foreground md:text-lg/relaxed">
-              Every corner of our shops, every drink on our menu, is infused with that original spirit of friendship and community. It's our story, and we invite you to be a part of it.
+              Bawat sulok ng aming mga tindahan, bawat inumin sa aming menu, ay may dalang orihinal na diwa ng pagkakaibigan at komunidad. Ito ang aming kwento, at inaanyayahan ka naming maging bahagi nito.
             </p>
             <Button variant="link" className="p-0 h-auto text-primary">
-              Read Our Full Story
+              Basahin ang Buong Kwento Namin
             </Button>
           </motion.div>
           <motion.div
