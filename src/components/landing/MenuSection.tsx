@@ -39,7 +39,7 @@ const menuItems = [
     name: 'Matcha Cheesecake',
     description: 'Earthy premium matcha topped with a layer of rich, salty-sweet cream cheese foam.',
     price: '₱135',
-    image: 'https://images.unsplash.com/photo-1575417634984-8e608b88a04b?w=500&auto=format&fit=crop&q=60',
+    image: 'https://images.unsplash.com/photo-1601924287811-e34de5d17476?w=500&auto=format&fit=crop&q=60',
     hint: 'matcha milk-tea',
     isBestseller: true,
   },
