@@ -9,9 +9,9 @@ const ThirdPlace = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="md:col-span-2 relative aspect-square md:aspect-auto md:h-80 w-full">
+              <div className="md:col-span-2 relative aspect-video md:aspect-auto md:h-80 w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1661499102718-aebb4886a0bc?w=400&h=400&auto=format&fit=crop&q=60"
+                  src="https://plus.unsplash.com/premium_photo-1738091397235-92e7381de07c?w=500&auto=format&fit=crop&q=60"
                   alt="Cozy cafe corner"
                   fill
                   className="rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
