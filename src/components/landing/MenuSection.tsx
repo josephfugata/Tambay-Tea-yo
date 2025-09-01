@@ -31,7 +31,7 @@ const menuItems = [
     name: 'Okinawa Brown Sugar',
     description: 'A decadent treat with roasted brown sugar syrup, fresh milk, and signature pearls.',
     price: '₱125',
-    image: 'https://images.unsplash.com/photo-1575417634984-8e608b88a04b?w=500&auto=format&fit=crop&q=60',
+    image: 'https://images.unsplash.com/photo-1611928237590-087afc90c6fd?w=500&auto=format&fit=crop&q=60',
     hint: 'brown-sugar milk-tea',
     isBestseller: false,
   },
