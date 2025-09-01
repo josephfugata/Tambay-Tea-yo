@@ -7,7 +7,7 @@ const steps = [
   {
     title: 'Sourced with Care',
     description: 'We travel the world to find the finest tea leaves, ensuring every sip starts with quality.',
-    image: 'https://images.unsplash.com/photo-1621221814631-e8bfdabd5ca4?w=400&h=500&auto=format&fit=crop&q=60',
+    image: 'https://images.unsplash.com/photo-1589618630299-c9b59a0075ee?w=500&auto=format&fit=crop&q=60',
     hint: 'tea leaves',
   },
   {
