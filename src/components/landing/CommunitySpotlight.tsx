@@ -5,10 +5,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import Autoplay from 'embla-carousel-autoplay';
+import { useIsMobile } from '@/hooks/use-mobile';
+import React from 'react';
 
 const stories = [
   {
@@ -37,7 +38,34 @@ const stories = [
   },
 ];
 
+const StoryCard = ({ story }: { story: (typeof stories)[0] }) => (
+    <Card className="h-full flex flex-col shadow-lg">
+      <CardContent className="p-0 flex flex-col flex-grow">
+        <div className="relative w-full h-56">
+          <Image
+            src={story.image}
+            alt={story.author}
+            fill
+            className="object-cover rounded-t-lg"
+            data-ai-hint={story.hint}
+          />
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+          <blockquote className="italic text-muted-foreground mb-4 flex-grow">
+            &quot;{story.quote}&quot;
+          </blockquote>
+          <p className="font-bold text-right text-primary">{story.author}</p>
+        </div>
+      </CardContent>
+    </Card>
+);
+
+
 const CommunitySpotlight = () => {
+    const isMobile = useIsMobile();
+    const autoplay = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }));
+
+
   return (
     <section id="community-spotlight" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
@@ -49,43 +77,32 @@ const CommunitySpotlight = () => {
             Ang pinaka-espesyal na sangkap namin ay kayo. Ito ang ilan sa mga moments na ibinahagi ninyo.
           </p>
         </div>
-        <Carousel
-          opts={{
-            align: 'start',
-            loop: true,
-          }}
-          className="w-full max-w-6xl mx-auto"
-        >
-          <CarouselContent>
+        {isMobile ? (
+          <div className="grid grid-cols-1 gap-6">
             {stories.map((story, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4 h-full">
-                  <Card className="h-full flex flex-col shadow-lg">
-                    <CardContent className="p-0 flex flex-col flex-grow">
-                      <div className="relative w-full h-56">
-                        <Image
-                          src={story.image}
-                          alt={story.author}
-                          fill
-                          className="object-cover rounded-t-lg"
-                          data-ai-hint={story.hint}
-                        />
-                      </div>
-                      <div className="p-6 flex flex-col flex-grow">
-                        <blockquote className="italic text-muted-foreground mb-4 flex-grow">
-                          &quot;{story.quote}&quot;
-                        </blockquote>
-                        <p className="font-bold text-right text-primary">{story.author}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
+              <StoryCard key={index} story={story} />
             ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
-        </Carousel>
+          </div>
+        ) : (
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            plugins={[autoplay.current]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent>
+              {stories.map((story, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-4 h-full">
+                    <StoryCard story={story} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        )}
       </div>
     </section>
   );
