@@ -23,7 +23,7 @@ const menuItems = [
     name: 'Taro Dream',
     description: 'A vibrant and earthy delight. Real taro paste blended for a smooth, satisfying experience.',
     price: '₱120',
-    image: 'https://images.unsplash.com/photo-1575417634984-8e608b88a04b?w=500&auto=format&fit=crop&q=60',
+    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=60',
     hint: 'taro milk-tea',
     isBestseller: true,
   },
