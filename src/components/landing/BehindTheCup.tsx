@@ -7,13 +7,13 @@ const behindTheCupItems = [
   {
     title: 'Meet Our Farmers',
     description: 'We partner with local farms that share our passion for quality and sustainability. Get to know the hands that grow our amazing ingredients.',
-    image: 'https://picsum.photos/500/500?random=26',
+    image: 'https://images.unsplash.com/photo-1433704334812-6c45b0b8784d?w=500&auto=format&fit=crop&q=60',
     hint: 'farmer portrait',
   },
   {
     title: 'Our Passionate Baristas',
     description: "They're more than just staff; they're artists, creators, and the smiling faces that make your day better. They're the heart of Tambay Tea.",
-    image: 'https://picsum.photos/500/500?random=27',
+    image: 'https://plus.unsplash.com/premium_photo-1661758946219-dcf3e31e557d?w=500&auto=format&fit=crop&q=60',
     hint: 'barista portrait',
   },
 ];
