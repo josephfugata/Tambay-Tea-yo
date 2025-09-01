@@ -28,7 +28,7 @@ const SocialFeed = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-4">
           {feedImages.map((image, index) => (
-            <Link key={index} href="#" className="block group overflow-hidden rounded-lg">
+            <Link key={index} href="https://m.me/pinoyentrepreneur.me?ref=webdev_follow_instagram" target="_blank" rel="noopener noreferrer" className="block group overflow-hidden rounded-lg">
               <Image
                 src={image.src}
                 alt={`Instagram feed image ${index + 1}`}
@@ -42,7 +42,7 @@ const SocialFeed = () => {
         </div>
         <div className="text-center mt-12">
             <Button asChild size="lg">
-                <Link href="#">I-follow ang @TambayTea sa Instagram</Link>
+                <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_follow_instagram" target="_blank" rel="noopener noreferrer">I-follow ang @TambayTea sa Instagram</Link>
             </Button>
         </div>
       </div>

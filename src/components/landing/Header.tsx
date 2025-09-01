@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const messengerLink = 'https://m.me/pinoyentrepreneur.me?ref=webdev_order_header';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +52,9 @@ const Header = () => {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="hidden md:flex">Order na!</Button>
+            <Button asChild className="hidden md:flex">
+                <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Order na!</Link>
+            </Button>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
@@ -76,8 +79,8 @@ const Header = () => {
                       </Link>
                     ))}
                   </nav>
-                  <Button size="lg" className="w-full">
-                    Order na!
+                  <Button asChild size="lg" className="w-full">
+                    <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Order na!</Link>
                   </Button>
                 </div>
               </SheetContent>

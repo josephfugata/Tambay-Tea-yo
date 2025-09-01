@@ -7,6 +7,7 @@ import MilkTeaCupIcon from '../icons/MilkTeaCupIcon';
 import BobaPearlIcon from '../icons/BobaPearlIcon';
 import { Badge } from '../ui/badge';
 import { Check, Plus, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 const allToppings = [
   { id: 'pearls', name: 'Tapioca Pearls', price: 15, icon: <BobaPearlIcon className="w-4 h-4" /> },
@@ -34,6 +35,8 @@ const ToppingPicker = () => {
   const isSelected = (topping: typeof allToppings[0]) => {
     return selectedToppings.some((t) => t.id === topping.id);
   };
+
+  const toppingsRef = selectedToppings.map(t => t.id).join(',');
 
   return (
     <section id="customizer" className="w-full py-12 md:py-24 lg:py-32">
@@ -93,7 +96,9 @@ const ToppingPicker = () => {
                 <div className="text-2xl font-bold">
                   Kabuuang Presyo: <span className="text-primary">₱{totalPrice.toFixed(2)}</span>
                 </div>
-                <Button size="lg" className="w-full">Idagdag sa Aking Order</Button>
+                <Button asChild size="lg" className="w-full">
+                    <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_customize_order_${toppingsRef}`} target="_blank" rel="noopener noreferrer">Idagdag sa Aking Order</Link>
+                </Button>
               </CardFooter>
             </div>
           </div>

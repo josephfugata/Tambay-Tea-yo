@@ -14,13 +14,13 @@ const Footer = () => {
           © {new Date().getFullYear()} Tambay Tea. Tara, tambay tayo!
         </p>
         <div className="flex items-center gap-4">
-          <Link href="#" aria-label="Instagram">
+          <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_follow_instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="#" aria-label="Facebook">
+          <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_follow_facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <Facebook className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="#" aria-label="Twitter">
+          <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_follow_twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <Twitter className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
         </div>

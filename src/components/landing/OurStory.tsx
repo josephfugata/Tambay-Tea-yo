@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const OurStory = () => {
   return (
@@ -25,8 +26,8 @@ const OurStory = () => {
             <p className="text-muted-foreground md:text-lg/relaxed">
               Bawat sulok ng aming mga tindahan, bawat inumin sa aming menu, ay may dalang orihinal na diwa ng pagkakaibigan at komunidad. Ito ang aming kwento, at inaanyayahan ka naming maging bahagi nito.
             </p>
-            <Button variant="link" className="p-0 h-auto text-primary">
-              Basahin ang Buong Kwento Namin
+            <Button asChild variant="link" className="p-0 h-auto text-primary">
+              <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_read_our_story" target="_blank" rel="noopener noreferrer">Basahin ang Buong Kwento Namin</Link>
             </Button>
           </motion.div>
           <motion.div

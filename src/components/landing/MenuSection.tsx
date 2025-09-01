@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -83,7 +84,9 @@ const MenuSection = () => {
               </CardContent>
               <CardFooter className="flex justify-between items-center">
                 <p className="text-lg font-bold text-primary">{item.price}</p>
-                <Button>Add to Order</Button>
+                <Button asChild>
+                  <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_order_${item.name.toLowerCase().replace(/ /g, '_')}`} target="_blank" rel="noopener noreferrer">Add to Order</Link>
+                </Button>
               </CardFooter>
             </Card>
           ))}

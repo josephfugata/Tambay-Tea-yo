@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const flavors = [
   {
@@ -51,7 +52,9 @@ const FlavorJourney = () => {
                 </div>
                 <h3 className="text-2xl font-bold font-headline mb-2">{flavor.name}</h3>
                 <p className="text-muted-foreground mb-4 flex-grow">{flavor.description}</p>
-                <Button variant="outline">Tingnan ang Flavors</Button>
+                <Button asChild variant="outline">
+                   <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_explore_flavors" target="_blank" rel="noopener noreferrer">Tingnan ang Flavors</Link>
+                </Button>
               </Card>
             </motion.div>
           ))}
