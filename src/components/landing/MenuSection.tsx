@@ -82,7 +82,7 @@ const MenuSection = () => {
                 <CardTitle className="text-xl font-headline mb-2">{item.name}</CardTitle>
                 <CardDescription>{item.description}</CardDescription>
               </CardContent>
-              <CardFooter className="flex justify-between items-center">
+              <CardFooter className="flex justify-between items-center lg:flex-col lg:items-start lg:gap-2">
                 <p className="text-lg font-bold text-primary">{item.price}</p>
                 <Button asChild>
                   <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_order_${item.name.toLowerCase().replace(/ /g, '_')}`} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
