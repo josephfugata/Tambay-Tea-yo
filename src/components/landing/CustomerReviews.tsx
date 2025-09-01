@@ -103,7 +103,7 @@ const CustomerReviews = () => {
           </div>
         ) : (
           <div className="relative mt-12 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
-            <div className="flex w-max animate-marquee-content items-stretch gap-6 [--gap:1.5rem] hover:[animation-play-state:paused]">
+            <div className="flex w-max items-stretch gap-6 [--gap:1.5rem] hover:[animation-play-state:paused] animate-marquee">
                 {reviews.map((review, index) => (
                     <ReviewCard key={index} review={review} />
                 ))}
