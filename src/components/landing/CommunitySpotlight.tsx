@@ -33,7 +33,7 @@ const stories = [
 ];
 
 const StoryCard = ({ story }: { story: (typeof stories)[0] }) => (
-    <Card className="h-full flex flex-col shadow-lg w-[380px] shrink-0">
+    <Card className="h-full flex flex-col shadow-lg w-full max-w-[380px] shrink-0">
       <CardContent className="p-0 flex flex-col flex-grow">
         <div className="relative w-full h-56">
           <Image
@@ -70,7 +70,7 @@ const CommunitySpotlight = () => {
           </p>
         </div>
         {isMobile ? (
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6 place-items-center">
             {stories.map((story, index) => (
               <StoryCard key={index} story={story} />
             ))}
