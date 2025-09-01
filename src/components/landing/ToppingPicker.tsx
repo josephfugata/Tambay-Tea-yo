@@ -97,7 +97,7 @@ const ToppingPicker = () => {
                   Kabuuang Presyo: <span className="text-primary">₱{totalPrice.toFixed(2)}</span>
                 </div>
                 <Button asChild size="lg" className="w-full">
-                    <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_customize_order_${toppingsRef}`} target="_blank" rel="noopener noreferrer">Idagdag sa Aking Order</Link>
+                    <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_customize_order_${toppingsRef}`} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
                 </Button>
               </CardFooter>
             </div>

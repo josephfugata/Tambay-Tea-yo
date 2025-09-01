@@ -85,7 +85,7 @@ const MenuSection = () => {
               <CardFooter className="flex justify-between items-center">
                 <p className="text-lg font-bold text-primary">{item.price}</p>
                 <Button asChild>
-                  <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_order_${item.name.toLowerCase().replace(/ /g, '_')}`} target="_blank" rel="noopener noreferrer">Add to Order</Link>
+                  <Link href={`https://m.me/pinoyentrepreneur.me?ref=webdev_order_${item.name.toLowerCase().replace(/ /g, '_')}`} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
                 </Button>
               </CardFooter>
             </Card>

@@ -24,7 +24,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
-              <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_order_hero" target="_blank" rel="noopener noreferrer">Order na!</Link>
+              <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_order_hero" target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="font-bold">
               <Link href="#locations">Hanapin ang Tambayan</Link>

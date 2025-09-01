@@ -53,7 +53,7 @@ const Header = () => {
           </nav>
           <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex">
-                <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Order na!</Link>
+                <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
             </Button>
             <Sheet>
               <SheetTrigger asChild>
@@ -80,7 +80,7 @@ const Header = () => {
                     ))}
                   </nav>
                   <Button asChild size="lg" className="w-full">
-                    <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Order na!</Link>
+                    <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
                   </Button>
                 </div>
               </SheetContent>

@@ -33,7 +33,7 @@ const MadeForYou = () => {
             Ang inumin mo, statement mo. Matamis, matapang, o kakaiba—ano ang trip mong timpla ngayon? Ang menu namin ang iyong canvas.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold animate-pulse">
-            <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_make_it_yours" target="_blank" rel="noopener noreferrer">Gawin Mong Unique</Link>
+            <Link href="https://m.me/pinoyentrepreneur.me?ref=webdev_make_it_yours" target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
           </Button>
         </motion.div>
       </div>
