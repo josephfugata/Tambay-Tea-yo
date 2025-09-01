@@ -15,8 +15,8 @@ const flavors = [
   {
     name: 'Fruity & Vibrant',
     description: 'Awaken your senses with a burst of fresh, zesty fruit teas.',
-    image: 'https://images.unsplash.com/photo-1623123093799-70a72826e167?w=500&auto=format&fit=crop&q=60',
-    hint: 'milk tea',
+    image: 'https://images.unsplash.com/photo-1698413463602-525762445be6?w=500&auto=format&fit=crop&q=60',
+    hint: 'fruit tea',
   },
   {
     name: 'Bold & Indulgent',
