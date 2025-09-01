@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const messengerLink = 'https://m.me/pinoyentrepreneur.me?ref=webdev_order_header';
 
   useEffect(() => {
@@ -25,6 +26,10 @@ const Header = () => {
     { href: '#locations', label: 'Lokasyon' },
     { href: '#reviews', label: 'Reviews' },
   ];
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header
@@ -55,7 +60,7 @@ const Header = () => {
             <Button asChild className="hidden md:flex">
                 <Link href={messengerLink} target="_blank" rel="noopener noreferrer">Quick Chat Order</Link>
             </Button>
-            <Sheet>
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden">
                   <Menu className="h-5 w-5" />
@@ -64,7 +69,7 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="grid gap-4 p-4">
-                  <Link href="/" className="flex items-center gap-2 font-bold">
+                  <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2 font-bold">
                      <BobaPearlIcon className="h-7 w-7 text-primary" />
                     <span className="text-xl font-headline">Tambay Tea</span>
                   </Link>
@@ -73,6 +78,7 @@ const Header = () => {
                       <Link
                         key={link.href}
                         href={link.href}
+                        onClick={handleLinkClick}
                         className="text-foreground/80 hover:text-primary transition-colors py-2"
                       >
                         {link.label}
