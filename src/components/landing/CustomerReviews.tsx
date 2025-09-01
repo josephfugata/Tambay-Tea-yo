@@ -96,7 +96,7 @@ const CustomerReviews = () => {
           </div>
         </div>
         {isMobile ? (
-          <div className="grid grid-cols-1 gap-6 mt-12">
+          <div className="grid grid-cols-1 gap-6 mt-12 place-items-center">
             {reviews.map((review, index) => (
               <ReviewCard key={index} review={review} />
             ))}
