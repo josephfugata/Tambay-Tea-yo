@@ -38,6 +38,9 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  experimental: {
+    serverActions: false,
+  }
 };
 
 export default nextConfig;

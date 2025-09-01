@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Coffee } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import BobaPearlIcon from '../icons/BobaPearlIcon';
 import { useState, useEffect } from 'react';
 
@@ -16,12 +16,12 @@ const Header = () => {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call on mount to set initial state
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
     { href: '#menu', label: 'Menu' },
-    { href: '#deals', label: 'Deals' },
     { href: '#locations', label: 'Lokasyon' },
     { href: '#reviews', label: 'Reviews' },
   ];

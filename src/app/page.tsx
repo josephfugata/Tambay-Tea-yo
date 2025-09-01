@@ -8,7 +8,6 @@ import ToppingPicker from '@/components/landing/ToppingPicker';
 import ThirdPlace from '@/components/landing/ThirdPlace';
 import MadeForYou from '@/components/landing/MadeForYou';
 import DailyRitual from '@/components/landing/DailyRitual';
-import PromoCodeGenerator from '@/components/landing/PromoCodeGenerator';
 import CustomerReviews from '@/components/landing/CustomerReviews';
 import CommunitySpotlight from '@/components/landing/CommunitySpotlight';
 import BehindTheCup from '@/components/landing/BehindTheCup';
@@ -34,7 +33,6 @@ export default function Home() {
         <ThirdPlace />
         <MadeForYou />
         <DailyRitual />
-        <PromoCodeGenerator />
         <CustomerReviews />
         <CommunitySpotlight />
         <BehindTheCup />
