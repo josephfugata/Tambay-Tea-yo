@@ -64,14 +64,15 @@ const MenuSection = () => {
           {menuItems.map((item) => (
             <Card key={item.name} className="flex flex-col overflow-hidden group">
               <CardHeader className="p-0 relative">
-                 <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300"
-                  data-ai-hint={item.hint}
-                />
+                <div className="w-full aspect-square relative">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    data-ai-hint={item.hint}
+                  />
+                </div>
                 {item.isBestseller && (
                   <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground">Best Seller</Badge>
                 )}
