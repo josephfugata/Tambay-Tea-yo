@@ -2,15 +2,10 @@
 
 import { Star } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import Autoplay from 'embla-carousel-autoplay';
 import { useIsMobile } from '@/hooks/use-mobile';
 import React from 'react';
+import { cn } from '@/lib/utils';
 
 const reviews = [
   {
@@ -48,7 +43,7 @@ const reviews = [
 ];
 
 const ReviewCard = ({ review }: { review: (typeof reviews)[0] }) => (
-    <Card className="h-full transform hover:scale-105 transition-transform duration-300 shadow-lg">
+    <Card className="h-full transform hover:scale-105 transition-transform duration-300 shadow-lg w-[350px] shrink-0">
       <CardHeader>
         <div className="flex items-center gap-4">
           <Avatar>
@@ -86,7 +81,6 @@ const ReviewCard = ({ review }: { review: (typeof reviews)[0] }) => (
 
 const CustomerReviews = () => {
     const isMobile = useIsMobile();
-    const autoplay = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }));
 
   return (
     <section id="reviews" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
@@ -108,24 +102,16 @@ const CustomerReviews = () => {
             ))}
           </div>
         ) : (
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-             plugins={[autoplay.current]}
-            className="w-full max-w-5xl mx-auto mt-12"
-          >
-            <CarouselContent>
-              {reviews.map((review, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-4">
-                    <ReviewCard review={review} />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+          <div className="relative mt-12 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+            <div className="flex w-max animate-marquee-content items-stretch gap-6 [--gap:1.5rem] hover:[animation-play-state:paused]">
+                {reviews.map((review, index) => (
+                    <ReviewCard key={index} review={review} />
+                ))}
+                 {reviews.map((review, index) => (
+                    <ReviewCard key={`duplicate-${index}`} review={review} />
+                ))}
+            </div>
+          </div>
         )}
       </div>
     </section>

@@ -1,13 +1,7 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
 import Image from 'next/image';
-import Autoplay from 'embla-carousel-autoplay';
 import { useIsMobile } from '@/hooks/use-mobile';
 import React from 'react';
 
@@ -39,7 +33,7 @@ const stories = [
 ];
 
 const StoryCard = ({ story }: { story: (typeof stories)[0] }) => (
-    <Card className="h-full flex flex-col shadow-lg">
+    <Card className="h-full flex flex-col shadow-lg w-[380px] shrink-0">
       <CardContent className="p-0 flex flex-col flex-grow">
         <div className="relative w-full h-56">
           <Image
@@ -63,8 +57,6 @@ const StoryCard = ({ story }: { story: (typeof stories)[0] }) => (
 
 const CommunitySpotlight = () => {
     const isMobile = useIsMobile();
-    const autoplay = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }));
-
 
   return (
     <section id="community-spotlight" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
@@ -84,24 +76,16 @@ const CommunitySpotlight = () => {
             ))}
           </div>
         ) : (
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            plugins={[autoplay.current]}
-            className="w-full max-w-6xl mx-auto"
-          >
-            <CarouselContent>
-              {stories.map((story, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-4 h-full">
-                    <StoryCard story={story} />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+           <div className="relative mt-12 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+            <div className="flex w-max animate-marquee-content items-stretch gap-6 [--gap:1.5rem] hover:[animation-play-state:paused]">
+                {stories.map((story, index) => (
+                    <StoryCard key={index} story={story} />
+                ))}
+                 {stories.map((story, index) => (
+                    <StoryCard key={`duplicate-${index}`} story={story} />
+                ))}
+            </div>
+          </div>
         )}
       </div>
     </section>
